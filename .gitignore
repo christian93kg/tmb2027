@@ -1,0 +1,33 @@
+# Local-only — never commit (contains repo briefing for local Claude Code sessions)
+CLAUDE.md
+
+# Plaintext site source — NEVER commit. The public repo only gets the
+# encrypted index.html (produced by ./publish.sh). Committing this would
+# defeat the whole password gate. Editable master lives here locally.
+src/
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor junk
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Local scratch — never commit
+.env
+.env.*
+*.local
+secrets.*
+scratch/
+tmp/
+
+# Build artifacts (none expected, but defensive)
+node_modules/
+dist/
+build/
+.cache/
